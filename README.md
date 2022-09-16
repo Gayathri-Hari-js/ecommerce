@@ -1,4 +1,7 @@
-# Getting Started with Create React App
+# Getting Started with Ecommerce App
+
+This is a basic e-comm application with  simple home screen 
+from which you can navigate to products page based on the catagory.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -6,6 +9,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+### `npm install`
+then
 ### `npm start`
 
 Runs the app in the development mode.\
@@ -16,6 +21,7 @@ You may also see any lint errors in the console.
 
 ### `npm test`
 
+No tests included in this basic ecomm project
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 

@@ -23,7 +23,8 @@ const Header = () => {
                       <Button type='primary' 
                                   className='header_button'
                                   icon={<HeartFilled /> }
-                                  ></Button>
+                                  onClick={()=> {navigate(`/wishlist`)} }>
+                                  </Button>
                     </Tooltip>
                     <Tooltip title="Your Cart">
                       <Button type='primary' 

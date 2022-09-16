@@ -1,6 +1,6 @@
 import React, {useReducer} from 'react';
 import { BrowserRouter,Route, Routes} from 'react-router-dom';
-import {Cart, Home, ProductDetails, ProductList} from './Pages';
+import {Cart, Home, ProductDetails, ProductList, Wishlist} from './Pages';
 import Header from './Components/Layout/Header';
 import Footer from './Components/Layout/Footer';
 import { cartReducer } from './Reducers/cartReducer';
@@ -23,6 +23,7 @@ function App() {
           <Route path ='/cart' element = {<Cart state={state} dispatch = {dispatch} />}></Route>
           <Route path ='/products/:catagory' element = {<ProductList state={state} dispatch = {dispatch} />}></Route>
           <Route path ='/product/:id' element = {<ProductDetails state={state} dispatch = {dispatch} />}></Route>
+          <Route path ='/wishlist' element = {<Wishlist state={state} dispatch = {dispatch} />}></Route>
         </Routes>
         <Footer></Footer>
         </BrowserRouter> 
