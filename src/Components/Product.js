@@ -11,8 +11,8 @@ function Product({state, dispatch}) {
         </Col>
         <Col span={12}>
           <div className='product_title'>{state.product.title}</div>
-          <div><span>Price: </span><span className='product_price'>${state.product.price}</span></div>
-          <div><span>Description: </span><span className='product_description'>{state.product.description}</span></div>
+          <div className='product_sub_title'>Price: </div><span className='product_price'>${state.product.price}</span>
+          <div className='product_sub_title'>Description: </div><span className='product_description'>{state.product.description}</span>
           
         </Col>
     </Row>

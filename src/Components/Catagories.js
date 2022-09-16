@@ -14,30 +14,23 @@ const Catagories = ({state, dispatch}) => {
   return (
     <div className='products_main'>
       <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
-        {allCatagories.map((cata, i) => (
-          
-            <Col className="gutter-row" span={6} key={i} >
-              <div
-                
-                style = {{width: 200,
-                  padding: '8px 0',
-                    border: '1px solid #ED820E',
-                    margin: 20, 
-                    height: 200}} >
-                <div style={{display:'flex', justifyContent:'space-between'}}>
-                    <div className='catagory_name'>{cata}</div>
-                    <Button type='primary' 
-                            shape='circle'
-                            icon={<ArrowRightOutlined />} 
-                            size='small' 
-                            onClick={()=> {navigate(`/products/${cata}`)}} 
-                            style={{top: '150px',
-                              right: '10px'}}/>
-                </div>
-                </div>
-             </Col>
-        ))}
-        </Row>
+        {allCatagories.map((cata, i) => (      
+          <Col className="gutter-row" span={6} key={i} >
+            <div className='catagory_container' >
+              <div style={{display:'flex', justifyContent:'space-between'}}>
+                <div className='catagory_name'>{cata}</div>
+                <Button type='primary' 
+                    shape='circle'
+                    icon={<ArrowRightOutlined />} 
+                    size='small' 
+                    onClick={()=> {navigate(`/products/${cata}`)}} 
+                    className='catagory_button'
+                />
+              </div>
+            </div>
+          </Col>)
+        )}
+      </Row>
     </div>
   )
 }

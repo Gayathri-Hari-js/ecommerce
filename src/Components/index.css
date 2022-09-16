@@ -2,8 +2,11 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    flex-direction: row;
 }
-
+.products_page{
+    padding: 10px;
+}
 .products_inner {
     display: flex;
     flex-direction: column;
@@ -14,6 +17,11 @@
     max-height: 200px;
     position: relative;
 }
+img.image_style{
+    width: 150px;
+    height: 200px;
+    object-fit : cover
+}
 .product_image{
     max-width: 50%;
     max-height: fit-content;
@@ -22,6 +30,12 @@
   font-weight: 800;
   font-size: larger;
 }
+
+.product_sub_title {
+    font-weight: 600;
+    font-size: small;
+}
+
 .product_price{
     font-weight: 600;
     font-size: medium;
@@ -37,10 +51,31 @@ button.ant-btn.ant-btn-primary.add_to_cart_button{
     background-color: #ED820E;
 }
 
+button.ant-btn.ant-btn-circle.ant-btn-primary.button_wishlist{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: rgb(237, 130, 14);
+    background: white;
+    border: rgb(237, 130, 14);
+}
+.catagory_container{
+    width: 200px;
+    padding: 8px 0;
+    border: 1px solid #ED820E;
+    margin: 20px;
+    height: 200px ;
+}
+
+button.ant-btn.ant-btn-circle.ant-btn-primary.ant-btn-sm.catagory_button {
+    top: 150px;
+    right: 10px;
+    background-color: #ED820E;
+}
 .catagory_name {
     font-size: 25px;
     font-style: italic;
-    color: #1890ff;
+    color: #ED820E;
     font-weight: 400;
     font-family: cursive;
     margin-left: 15px;
