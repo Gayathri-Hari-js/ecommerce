@@ -1,26 +1,21 @@
 import React from 'react';
 import { Button, Row } from 'antd';
+import './index.css';
 
 export function Wishlist({state, dispatch}) {
 
   const {wishlist, cart} = state;
 
   return (
-    <div style={{display:'flex', flexDirection:'column'}}>
-      <b style={{ fontSize: 25, alignSelf: 'center'}}> Wishlist</b>
+    <div className='cart_main'>
+      <b className= 'cart_title' > Wishlist</b>
       {wishlist.length > 0 ? (
-        wishlist.map((prod)=>(
-            
-        <div key={prod.id}
-          style={{display:'flex',
-                  border: "1px solid grey",
-                  padding:10,
-                  justifyContent:'space-between'}}
-                  >
-           <img src={prod.image} alt={prod.title} style={{width:70, objectFit: 'cover'}}/>  
+        wishlist.map((prod)=>(         
+         <div key={prod.id} className = 'cart_row'>
+           <img src={prod.image} alt={prod.title} className ='cart_img'/>  
            <div >
-                    <Row>{prod.title}</Row>
-                    <Row><b style={{color:'#ED820E', paddingLeft:'30px'}}>${prod.price}</b></Row>
+              <Row>{prod.title}</Row>
+              <Row><b className ='price_tag'>${prod.price}</b></Row>
             </div>
             <div> 
               <Button 

@@ -1,0 +1,23 @@
+.cart_main{
+    display:flex;
+    flex-direction:column;
+}
+.cart_title{
+    font-size: 25px;
+    align-self: center;
+}
+.cart_row {
+    display: flex;
+    border: 1px solid grey;
+    padding:10px ;
+    justify-content:space-between;
+}
+
+img.cart_img{
+    width:70px;
+    object-fit: cover;
+}
+.price_tag {
+    color:#ED820E;
+    padding-left:10px;
+}
